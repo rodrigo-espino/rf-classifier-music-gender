@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify
 import pickle
+from flask_cors import CORS
 import numpy as np
 
 app = Flask(__name__)
+CORS(app)
 
 # Load the trained model
 filename = 'rf_model.pkl'
