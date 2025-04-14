@@ -12,7 +12,8 @@ with open(filename, 'rb') as file:
     model = pickle.load(file)
 
 # Define the classes (you'll need to replace these with your actual classes)
-classes = np.array(['Banda', 'Mariachi', 'Mexicana Contemporánea', 'Norteño'])
+classes = np.array(['Banda', 'Bolero', 'Duranguense', 'Mariachi',
+                    'Mexicana Contemporánea', 'Norteño', 'Rock', 'Tropical'])
 
 ##
 @app.route('/predict', methods=['POST'])
