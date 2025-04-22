@@ -30,5 +30,9 @@ def predict():
     except Exception as e:
         return jsonify({'error': str(e)})
 
+@app.route('/ok', methods=['GET'])
+def return_okey():
+    return jsonify({'msg':'Ok'})
+
 if __name__ == '__main__':
     app.run(debug=True)
